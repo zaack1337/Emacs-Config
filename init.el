@@ -12,6 +12,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(org-agenda-files '("~/notes/initial.org"))
  '(package-selected-packages
    '(dashboard markdown-mode nerd-icons nerd-icons-dired nimbus-theme
 	       ultra-scroll)))

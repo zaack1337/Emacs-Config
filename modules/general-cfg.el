@@ -8,4 +8,7 @@
 ;; define projeto
 (setq project-vc-extra-root-markers '(".project"))
 
+;; config agenda
+(setq org-agenda-files '("~/notes/"))
+
 (provide 'general-cfg)
