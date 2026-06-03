@@ -5,5 +5,7 @@
 (setq make-backup-files nil)
 (auto-save-mode nil)
 
+;; define projeto
+(setq project-vc-extra-root-markers '(".project"))
 
 (provide 'general-cfg)
