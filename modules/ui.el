@@ -44,4 +44,10 @@
   :ensure t
   :hook (dired-mode . nerd-icons-dired-mode))
 
+;; Modeline
+(use-package doom-modeline 
+  :init (doom-modeline-mode 1)
+  :ensure t
+  )
+
 (provide 'ui)
