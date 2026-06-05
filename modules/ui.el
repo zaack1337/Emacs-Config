@@ -50,4 +50,20 @@
   :ensure t
   )
 
+(use-package vertico
+  :init
+  (vertico-mode)
+  :ensure t)
+
+(use-package savehist
+  :init
+  (savehist-mode))
+
+(use-package marginalia
+  :init
+  (marginalia-mode)
+
+  :ensure t
+  )
+
 (provide 'ui)
