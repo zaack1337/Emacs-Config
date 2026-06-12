@@ -47,4 +47,6 @@
           (?B . "↑")
           (?C . "↓"))))
 
+(add-hook 'org-mode-hook #'org-display-inline-images)
+
 (provide 'org-cfg)

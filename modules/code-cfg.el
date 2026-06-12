@@ -59,4 +59,6 @@
   :ensure t
   )
 
+(electric-pair-mode 1)
+
 (provide 'code-cfg)
