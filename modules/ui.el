@@ -6,7 +6,7 @@
 (tooltip-mode -1) ; oculta dicas
 
 (global-display-line-numbers-mode t) ; enumeração de linhas
-;; (global-hl-line-mode t) destaca linha atual
+(global-hl-line-mode t) ; destaca linha atual
 (column-number-mode t) ; exibe coluna atual
 
 ;; espaçamento das bordas laterais
@@ -22,6 +22,7 @@
 (global-visual-line-mode t)
 
 ;; tema
+;; package-install ^RET 'theme'
 (load-theme 'nimbus t)
 
 ;; tipo de cursor
@@ -31,7 +32,9 @@
 (set-face-attribute 'default nil :font "Roboto Mono" :height 120)
 
 ;; Tranparencia
-(use-package ultra-scroll)
+(use-package ultra-scroll
+  :ensure t
+  )
 (set-frame-parameter nil 'alpha-background 90)
 (add-to-list 'default-frame-alist '(alpha-background . 90))
 
