@@ -22,9 +22,12 @@
 (global-visual-line-mode t)
 
 ;; tema
-;; package-install ^RET 'theme'
-(load-theme 'nimbus t)
-
+(use-package doom-themes
+  :ensure t
+  :config
+  (load-theme 'doom-tokyo-night t)
+  (doom-themes-visual-bell-config)
+  (doom-themes-org-config))
 ;; tipo de cursor
 (setq-default cursor-type 'bar)
 

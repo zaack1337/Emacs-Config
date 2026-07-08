@@ -15,9 +15,9 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files '("~/notes/initial.org"))
  '(package-selected-packages
-   '(cape corfu dashboard doom-modeline marginalia markdown-mode
-	  nerd-icons nerd-icons-dired nimbus-theme org-modern
-	  treesit-auto ultra-scroll vertico)))
+   '(cape corfu dashboard doom-modeline doom-themes marginalia
+	  markdown-mode nerd-icons-dired nimbus-theme org-modern
+	  treesit-auto ultra-scroll vertico vterm)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
