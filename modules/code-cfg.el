@@ -59,6 +59,14 @@
   :ensure t
   )
 
+
+(use-package magit
+	:defer t
+	:custom
+	(magit-format-file-function #'magit-format-file-nerd-icons)
+	:ensure t)
+
+
 (electric-pair-mode 1)
 
 (provide 'code-cfg)
