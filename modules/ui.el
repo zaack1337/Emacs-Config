@@ -21,18 +21,23 @@
 ;; quebra de linha visual
 (global-visual-line-mode t)
 
+(add-to-list 'custom-theme-load-path
+             (expand-file-name "themes" user-emacs-directory))
+
+(load-theme 'red-black t)
+
 ;; tema
-(use-package doom-themes
-  :ensure t
-  :config
-  (load-theme 'doom-tokyo-night t)
-  (doom-themes-visual-bell-config)
-  (doom-themes-org-config))
+;(use-package doom-themes
+;  :ensure t
+;  :config
+;  (load-theme 'doom-tokyo-night t)
+;  (doom-themes-visual-bell-config)
+;  (doom-themes-org-config))
 ;; tipo de cursor
 (setq-default cursor-type 'bar)
 
 ;; Fonte
-(set-face-attribute 'default nil :font "Roboto Mono" :height 120)
+;; (set-face-attribute 'default nil :font "Roboto Mono" :height 120)
 
 ;; Tranparencia
 (use-package ultra-scroll
@@ -65,7 +70,7 @@
   :init
   (savehist-mode))
 
-(use-package marginalia
+(use-package marginalia 
   :init
   (marginalia-mode)
 

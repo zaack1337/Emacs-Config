@@ -1,22 +1,17 @@
-
 ;; -*- lexical-binding: t; -*-
-(add-to-list 'default-frame-alist '(background-color . "#1e1e2e"))
-
-(setq gc-cons-threshold most-positive-fixnum
-				gc-cons-percentage 0.6
-				read-process-output-max (* 5 1024 1024))
-
-(add-hook 'emacs-startup-hook
-					(lambda () (setq gc-cons-threshold (* 100 1024 1024)
-														 gc-cons-percentage 0.1)))
 
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
 
-;; Transparent title bar
-(set-frame-parameter nil 'ns-transparent-titlebar t)
-(add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+;; Improve emacs perfomance
+(setq gc-cons-threshold 100000000
+			gc-cons-percentage 0.6
+			read-process-output-max 1048576
+			native-comp-speed 2
 
-(provide 'early-init)
-
+			;; Remove initial tutorial screen and others
+			inhibit-startup-screen t
+			inhibit-splash-screen t
+			inhibit-startup-message t
+			inhibit-startup-buffer-menu t)
