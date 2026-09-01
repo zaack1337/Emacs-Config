@@ -1,0 +1,10 @@
+#+TITLE: bitkil é gay
+#+DESCRIPTION: tste
+#+DATE: <2026-08-13 qui>
+#+AUTHOR: bitkill
+-----
+
+* DONE add a home manager
+* DONE matar pessoas
+* TODO [#A] estupra o bitkil
+

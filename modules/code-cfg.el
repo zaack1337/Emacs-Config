@@ -66,6 +66,16 @@
 	(magit-format-file-function #'magit-format-file-nerd-icons)
 	:ensure t)
 
+(use-package yasnippet
+    :hook ((text-mode
+          prog-mode
+          conf-mode
+          snippet-mode) . yas-minor-mode-on)
+    :ensure t)
+
+(use-package yasnippet-snippets
+    :after yasnippet
+    :ensure t)
 
 (electric-pair-mode 1)
 

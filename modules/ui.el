@@ -37,7 +37,7 @@
 (setq-default cursor-type 'bar)
 
 ;; Fonte
-;; (set-face-attribute 'default nil :font "Roboto Mono" :height 120)
+(set-face-attribute 'default nil :font "JetBrainsMono Nerd Font Mono" :height 110)
 
 ;; Tranparencia
 (use-package ultra-scroll

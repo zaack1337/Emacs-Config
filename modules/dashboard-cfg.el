@@ -1,7 +1,7 @@
 (use-package dashboard
   :ensure t
   :init
-  
+
 ;; nerd icons
 (setq dashboard-display-icons-p t)
 (setq dashboard-icon-type 'nerd-icons)
@@ -21,9 +21,14 @@
 
 ;; banner
 (setq dashboard-banner-logo-title "zaack1337 - Emacs")
-(setq dashboard-startup-banner (locate-user-emacs-file "banner.png"))
+(setq dashboard-startup-banner (locate-user-emacs-file "263fe1d597a45cac544e2bd5183bba16.jpg"))
 ;;(setq dashboard-image-banner-max-height 300)
 ;;(setq dashboard-image-banner-max-width 300)
 (dashboard-setup-startup-hook))
+
+(use-package page-break-lines
+  :ensure t
+  )
+
 
 (provide 'dashboard-cfg)
