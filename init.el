@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/modules/")
+(add-to-list 'load-path "~/.emacs.d/lisp/discord-rpc")
 
 (require 'ui)
 (require 'packages-cfg)
@@ -7,6 +8,7 @@
 (require 'code-cfg)
 (require 'general-cfg)
 (require 'org-cfg)
+(require 'discord-rpc-cfg)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -14,7 +16,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("4948bf17970f7fe49cdb2e4829d2434ea4c990a37df983258b068b6954bad143"
+   '("2c3b43b06b96a8861e50fbeb13fd3b20b9d6b1711db885237c11dcbd0217dcb4"
+     "4948bf17970f7fe49cdb2e4829d2434ea4c990a37df983258b068b6954bad143"
      default))
  '(org-agenda-files '("~/notes/initial.org"))
  '(package-selected-packages

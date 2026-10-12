@@ -24,7 +24,7 @@
 (add-to-list 'custom-theme-load-path
              (expand-file-name "themes" user-emacs-directory))
 
-(load-theme 'red-black t)
+(load-theme 'noctalia t)
 
 ;; tema
 ;(use-package doom-themes
